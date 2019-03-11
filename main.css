@@ -2,3 +2,46 @@
 	margin: 0;
 	padding: 0;
 }
+
+.header{
+  height: 17vh;
+  width: 100%;
+  background-color: #44B2FF;
+  border-bottom: 3px solid black;
+  background: repeating-linear-gradient(
+    -45deg,
+    #44B2FF,
+    #44B2FF 22px,
+    #2B2B2B 20px,
+    #2B2B2B 46px);
+}
+.logo{
+  width: 17%;
+  height: 15vh;
+  float: left;
+  background-color: #2B2B2B;
+  border: 3px solid black;
+}
+
+.logo-text{
+  font-size: 500%;
+  color: #1FE8CF;
+  float: left;
+  text-align: center;
+}
+
+.header-bar, .header-bar1{
+  margin-top: 3%;
+  height: 8vh;
+  width: 14%;
+  text-align: center;
+  float: left;
+  background-color: #2A2B2B;
+  color: #44B2FF;
+  border: 3px solid black;
+  font-size: 300%;
+}
+
+.header-bar1{
+  margin-left: 20%;
+}
