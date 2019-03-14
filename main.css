@@ -1,47 +1,63 @@
 *{
-	margin: 0;
-	padding: 0;
+  padding: 0;
+  margin: 0;
 }
 
 .header{
   height: 17vh;
   width: 100%;
   background-color: #44B2FF;
-  border-bottom: 3px solid black;
-  background: repeating-linear-gradient(
-    -45deg,
-    #44B2FF,
-    #44B2FF 22px,
-    #2B2B2B 20px,
-    #2B2B2B 46px);
 }
 .logo{
   width: 17%;
   height: 15vh;
   float: left;
-  background-color: #2B2B2B;
-  border: 3px solid black;
+  background-color: #44B2FF;
 }
 
 .logo-text{
   font-size: 500%;
-  color: #1FE8CF;
+  color: #DCE4E8;
   float: left;
   text-align: center;
+  background-color: #44B2FF;
 }
 
 .header-bar, .header-bar1{
-  margin-top: 3%;
-  height: 8vh;
-  width: 14%;
+  margin-top: 5%;
+  height: 4vh;
+  width: 10%;
   text-align: center;
   float: left;
-  background-color: #2A2B2B;
-  color: #44B2FF;
-  border: 3px solid black;
-  font-size: 300%;
+  background-color: #44B2FF;
+  color: #DCE4E8;
+  font-size: 230%;
 }
 
 .header-bar1{
-  margin-left: 20%;
+  margin-left: 25%;
+}
+
+.header-bar:hover, .header-bar1:hover{
+  color: #CED5D9;
+}
+
+#sidbar-left-locations{
+  width: 18%;
+  height: 60vh;
+  border: 2vh solid #CED5D9;
+  border-radius: 2%;
+  float: left;
+  margin-left: 17%;
+  margin-top: 4%;
+}
+
+#sidbar-right-karta{
+    width: 30%;
+    height: 60vh;
+    border: 2vh solid #CED5D9;
+    border-radius: 2%;
+    float: left;
+    margin-left: 12%;
+    margin-top: 4%;
 }
