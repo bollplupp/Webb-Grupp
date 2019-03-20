@@ -1,35 +1,34 @@
 *{
   padding: 0;
   margin: 0;
+	font-family: "Helvetica";
 }
 
 .header{
   height: 17vh;
   width: 100%;
-  background-color: #44B2FF;
 }
 .logo{
   width: 17%;
-  height: 15vh;
+  height: 14vh;
   float: left;
-  background-color: #44B2FF;
+	margin-top: 1%;
+	margin-left: 2%;
 }
 
 .logo-text{
   font-size: 500%;
-  color: #DCE4E8;
+  color: black;
   float: left;
   text-align: center;
-  background-color: #44B2FF;
 }
 
 .header-bar, .header-bar1{
-  margin-top: 5%;
+  margin-top: 3%;
   height: 4vh;
   width: 10%;
   text-align: center;
   float: left;
-  background-color: #44B2FF;
 }
 
 .header-bar1{
@@ -37,13 +36,41 @@
 }
 
 .header-bar a, .header-bar1 a{
-  color: #DCE4E8;
-  font-size: 230%;
+  color: black;
+  font-size: 220%;
 	text-decoration: none;
 }
 
 .header-bar a:hover, .header-bar1 a:hover{
-  color: #CED5D9;
+  color: #43618F;
+}
+
+.mini-header{
+	width: 100%;
+	height: 7vh;
+	background-color: #44B2FF;
+}
+.mini-header-right{
+	margin-right: 5%;
+	margin-top: 1%;
+	color: white;
+	float: right;
+}
+.mini-header-left{
+	margin-left: 10%;
+	margin-top: 1%;
+	color: white;
+	float: left;
+}
+
+#Container{
+	width: 85%;
+	height: 70vh;
+	background-color: #43618F;
+	float: left;
+	margin-top: 1%;
+	margin-left: 8%;
+	border-radius: 2vh;
 }
 
 #sidbar-left-locations{
@@ -53,16 +80,17 @@
   border: 2vh solid #CED5D9;
   border-radius: 2%;
   float: left;
-  margin-left: 17%;
-  margin-top: 4%;
+  margin-left: 15%;
+  margin-top: 2%;
 }
 
 #sidbar-right-karta{
     width: 30%;
     height: 60vh;
     border: 2vh solid #CED5D9;
+		background-color: #A4AAAD;
     border-radius: 2%;
     float: left;
-    margin-left: 12%;
-    margin-top: 4%;
+    margin-left: 14%;
+    margin-top: 2%;
 }

@@ -1,0 +1,35 @@
+.search{
+  width: 60%;
+  height: 100vh;
+  background-color: #44B2FF;
+  float: left;
+  margin-left: 20%;
+  margin-top: 1%;
+}
+
+.search-box{
+  height: 20vh;
+  border: 2px solid black;
+}
+
+.search-bar{
+  width: 36%;
+  height: 5vh;
+  background-color: #DCE4E8;
+  float: left;
+  margin-top: 2%;
+  margin-left: 2%;
+  border-radius: 3vh;
+  border: none;
+  font-size: 110%;
+  margin-left: 1%;
+}
+
+.search-options {
+  float: left;
+  width: 16%;
+  height: 4vh;
+  margin-top: 2.3%;
+  margin-left: 4%;
+  border-radius: 1vh;
+}
