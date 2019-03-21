@@ -19,10 +19,12 @@
   float: left;
   margin-top: 2%;
   margin-left: 2%;
-  border-radius: 3vh;
+  border-radius: 1vh;
   border: none;
   font-size: 110%;
   margin-left: 1%;
+  font-family: "Helvetica";
+  text-indent: 2%;
 }
 
 .search-options {
@@ -32,4 +34,5 @@
   margin-top: 2.3%;
   margin-left: 4%;
   border-radius: 1vh;
+  font-family: "Helvetica"
 }
