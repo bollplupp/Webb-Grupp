@@ -1,7 +1,6 @@
 *{
   padding: 0;
   margin: 0;
-	font-family: "Vintage";
 }
 
 .header{
@@ -40,6 +39,7 @@
   color: black;
   font-size: 220%;
 	text-decoration: none;
+	font-family: "Vintage";
 }
 
 .header-bar a:hover, .header-bar1 a:hover{
