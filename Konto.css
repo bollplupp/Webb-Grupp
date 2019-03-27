@@ -14,18 +14,18 @@
   font-size: 500%;
   color: black;
   text-align: center;
-	font-family: "Vintage";
+	font-family: Vintage;
 }
 
 #special-bar, #special-bar a{
 font-size: 150%;
 text-decoration: none;
-font-family: "Vintage";
+font-family: Vintage;
 margin-left: 2%;
 margin-top: 1%;
 color: black;
 }
 
 #special-bar a:hover{
-  color: 
+  color:
 }

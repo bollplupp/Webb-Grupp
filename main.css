@@ -1,8 +1,11 @@
 *{
   padding: 0;
   margin: 0;
-  font-family: "Vintage";
   box-sizing: border-box;
+}
+@font-face {
+  font-family: Vintage;
+  src: url(vintage.ttf);
 }
 
 .header{
@@ -22,7 +25,7 @@
   color: black;
   float: left;
   text-align: center;
-	font-family: "Vintage";
+	font-family: Vintage;
 }
 
 .header-bar, .header-bar1{
