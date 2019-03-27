@@ -6,7 +6,6 @@
 #logo-special{
   width: 17%;
   height: 13vh;
-  float: left;
   margin-top: 1%;
 	margin-left: 3%;
 }
@@ -14,29 +13,19 @@
 #logo-text-special{
   font-size: 500%;
   color: black;
-  float: left;
   text-align: center;
 	font-family: "Vintage";
 }
 
-.header-bar, .header-bar1{
-  margin-top: 4%;
-  height: 4vh;
-  width: 10%;
-  text-align: center;
+#special-bar, #special-bar a{
+font-size: 150%;
+text-decoration: none;
+font-family: "Vintage";
+margin-left: 2%;
+margin-top: 1%;
+color: black;
 }
 
-.header-bar1{
-  margin-left: 33%;
-}
-
-.header-bar a, .header-bar1 a{
-  color: black;
-  font-size: 220%;
-	text-decoration: none;
-	font-family: "Vintage";
-}
-
-.header-bar a:hover, .header-bar1 a:hover{
-  color: #43618F;
+#special-bar a:hover{
+  color: 
 }

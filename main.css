@@ -34,7 +34,7 @@
 }
 
 .header-bar1{
-  margin-left: 33%;
+  margin-left: 34%;
 }
 
 .header-bar a, .header-bar1 a{
@@ -81,13 +81,13 @@
 }
 
 #Container{
-	width: 85%;
+	width: 78%;
 	height: 70vh;
 	background-color: #43618F;
 	float: left;
 	margin-top: 1%;
-	margin-left: 8%;
-	border-radius: 2vh;
+	margin-left: 11%;
+	/*border-radius: 2vh;*/
 }
 
 #sidbar-left-locations{
