@@ -1,5 +1,29 @@
 
 
+
+
+/*
+  var loginDesign = document.getElementById('loginDesign');
+
+  var login = document.getElementById("login");
+
+  login.onclick = function() {
+    loginDesign.style.display = "block";
+  }
+
+  window.onclick = function(event) {
+    if (event.target == loginDesign) {
+      loginDesign.style.display = "none";
+    }
+  }
+*/
+
+
+
+
+
+
+/*
 var SL = require('https://api.sl.se/api2/TravelplannerV3_1/trip.<FORMAT>?key=<DIN API NYCKEL>&parametrar');
  
 var sl = new SL({
@@ -23,3 +47,4 @@ var sl = new SL({
     }
   });
 firebase.auth().signInWithEmailAndPassword(email, password);
+*/
