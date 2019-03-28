@@ -3,10 +3,6 @@
   margin: 0;
   box-sizing: border-box;
 }
-@font-face {
-  font-family: vintage;
-  src: url(vintage.ttf);
-}
 
 .header{
   height: 17vh;
@@ -24,7 +20,7 @@
   color: black;
   float: left;
   text-align: center;
-	font-family: Vintage;
+	font-family: vintage;
 }
 
 .header-bar, .header-bar1{
@@ -118,7 +114,7 @@
 
 body, html {
 	height: 100%;
-	font-family: "Helvetica", sans-serif;
+	/*font-family: "Helvetica", sans-serif;*/
 }
 
 /*---------------------------------------------*/
@@ -533,4 +529,10 @@ iframe {
 /* ANVÄNDS */
 .validate-input {
   position: relative;
+}
+
+
+@font-face{
+  font-family: vintage;
+  src: url(vintage.ttf);
 }
