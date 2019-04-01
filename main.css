@@ -1,34 +1,55 @@
 *{
   padding: 0;
   margin: 0;
+  font-family: "Vintage"; 
   box-sizing: border-box;
 }
 
+@media (max-width: 1000px){
+  #createDesign, #loginDesign{
+    width: 50%;
+    height: 100%;
+  }
+  #loginClose, #createClose{
+    display: block;
+    float: right;
+    font-size: 200%;
+    color: white;
+  }
+  
+  #loginClose:hover, #createClose:hover{
+    cursor: pointer;
+    color: lightgray;
+  }
+}
+@media (max-width: 550px){
+  #createDesign, #loginDesign{
+    width: 100%;
+    height: 100%;
+  }
+}
 .header{
   height: 17vh;
   width: 100%;
 }
-/*.logo{
+.logo{
   width: 17%;
   height: 13vh;
   float: left;
+  margin-top: 1%;
 	margin-left: 11%;
-  margin-top: 0.75%;
-}*/
+}
 
 .logo-text{
   font-size: 500%;
   color: black;
   float: left;
   text-align: center;
-	font-family: vintage;
-	margin-left: 11%;
-  margin-top: 0.75%;
+	font-family: "Vintage";
 }
 
-
 .header-bar, .header-bar1{
-  margin-top: 3%;
+  margin-top: 4%;
   height: 4vh;
   width: 10%;
   text-align: center;
@@ -43,7 +64,7 @@
   color: black;
   font-size: 220%;
 	text-decoration: none;
-	font-family: Vintage;
+	font-family: "Vintage";
 }
 
 .header-bar a:hover, .header-bar1 a:hover{
@@ -55,17 +76,26 @@
 	height: 6vh;
 	background-color: #44B2FF;
 }
-.mini-header-right, #btnLogin{
+.mini-header-right{
   font-family: 'Helvetica';
-	margin-right: 4%;
+	margin-right: 5%;
 	margin-top: 1%;
 	color: white;
   float: right;
   text-decoration: none;
 }
 
-#btnLogin:hover{
+#btnLogin, #btnCreate{
+  font-family: 'Helvetica';
+  margin: 1%;
+	color: white;
+  float: right;
+  text-decoration: none;
+}
+
+.mini-header-right:hover, #btnLogin:hover, #btnCreate:hover{
 	color: #43618F;
+  float: right;
   text-decoration: none;
 }
 
@@ -77,37 +107,38 @@
 }
 .mini-header-left, .mini-header-right{
   font-family: "Helvetica";
-  font-size: 85%;
 }
 
 #Container{
-	width: 78%;
+	width: 85%;
 	height: 70vh;
 	background-color: #43618F;
 	float: left;
-	margin-left: 11%;
+	margin-top: 1%;
+	margin-left: 8%;
+	border-radius: 2vh;
 }
 
 #sidbar-left-locations{
-  width: 23%;
+  width: 18%;
   height: 60vh;
 	background-color: #A4AAAD;
   border: 2vh solid #CED5D9;
   border-radius: 2%;
   float: left;
-  margin-left: 10%;
-  margin-top: 3%;
+  margin-left: 15%;
+  margin-top: 2%;
 }
 
 #sidbar-right-karta{
-    width: 40%;
+    width: 30%;
     height: 60vh;
     border: 2vh solid #CED5D9;
 		background-color: #A4AAAD;
     border-radius: 2%;
     float: left;
-    margin-left: 15%;
-    margin-top: 3%;
+    margin-left: 14%;
+    margin-top: 2%;
 }
 
 
@@ -118,7 +149,7 @@
 
 body, html {
 	height: 100%;
-	/*font-family: "Helvetica", sans-serif;*/
+	font-family: "Helvetica", sans-serif;
 }
 
 /*---------------------------------------------*/
@@ -144,6 +175,9 @@ a:hover {
 }
 
 /*---------------------------------------------*/
+h1,h2,h3,h4,h5,h6 {
+	margin: 0px;
+}
 
 p {
 	font-family: "Helvetica";
@@ -218,9 +252,11 @@ iframe {
 /*//////////////////////////////////////////////////////////////////
 [ Utility ]*/
 /* ANVÄNDS */
+
 .text-center{
-  margin-top: 5%;
+  margin: 5% 0 10% 0;
 }
+
 /* ANVÄNDS */
 .txt1 {
   font-family: "Helvetica";
@@ -229,8 +265,19 @@ iframe {
   line-height: 1.5;
 }
 
+#loginClose, #createClose{
+  float: right;
+  font-size: 200%;
+  color: white;
+}
+
+#loginClose:hover, #createClose:hover{
+  cursor: pointer;
+  color: lightgray;
+}
+
 /* ANVÄNDS */
-#loginBase{
+#loginBase, #createBase{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -241,6 +288,7 @@ iframe {
   overflow: hidden;
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+
 /* ANVÄNDS */
 .wrap-login100 {
   position: fixed !important;
@@ -267,10 +315,6 @@ iframe {
   to {right: 0; opacity: 1}
 }
 
-@keyframes fade-out {
-  from {right: 0; opacity: 1}
-  to {right: -300px; opacity: 0}
-}
 /*------------------------------------------------------------------
 [ Form ]*/
 /* ANVÄNDS */
@@ -314,7 +358,7 @@ iframe {
   padding: 0 5px 0 38px;
 }
 
-/*---------------------------------------------*/
+/*---------------------------------------------*/ 
 /* ANVÄNDS */
 .focus-input100 {
   position: absolute;
@@ -388,7 +432,6 @@ iframe {
   padding-left: 5px;
 }
 
-
 /*==================================================================
 [ Restyle Checkbox ]*/
 /* ANVÄNDS */
@@ -415,7 +458,6 @@ iframe {
 }
 /* ANVÄNDS */
 .label-checkbox100::before {
-  content: "\f26b";
   font-family: Material-Design-Iconic-Font;
   font-size: 13px;
   color: transparent;
@@ -533,10 +575,4 @@ iframe {
 /* ANVÄNDS */
 .validate-input {
   position: relative;
-}
-
-
-@font-face{
-  font-family: vintage;
-  src: url(../Webb-Grupp/Fonts/vintage.ttf);
 }
