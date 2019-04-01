@@ -3,161 +3,32 @@
 <head>
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <title>AdMap</title>
+    <title>Page Title</title>
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <link rel="stylesheet" type="text/css" media="screen" href="/static/main.css?q=12345">
-    
-    <!-- {{ url_for('static', filename='main.css') }} -->
+    <link rel="stylesheet" type="text/css" media="screen" href="main.css">
+    <script src="main.js"></script>
 </head>
-
 <body>
-  <div class="mini-header">
-    <button onclick="createAccount()" id="btnCreate">Create Account</button>
-    <button onclick="login()" id="btnLogin">Login</button>
-    <a class="mini-header-right"> Email: mail@example.com | My account</a>
-    <a class="mini-header-left"> Help | Contact | Track Annonser </a>
-  </div>
-<div class="header">
-  <div class="logo">
-    <a class="logo-text">AdMap</a>
-  </div>
-  <div class="header-bar1"><a href="index.html">Home</a></div>
-  <div class="header-bar"><a href="annonser.html">Annonser</a></div>
-  <div class="header-bar"><a>Om</a></div>
-  </div>
-  <div id="Container">
-    <div id="sidbar-left-locations">
-    </div>
-    <div id="sidbar-right-karta"></div>
-  </div>
-
-
-
-
-
-  <div id="loginBase">
-    <div id="loginDesign" class="wrap-login100">
-      <span id="loginClose">&times;</span>
-      <form id="loginForm" class="login100-form" action="/" method="POST">
-
-        <span class="login100-form-title">
-          Log in
-        </span>
-
-        <div class="wrap-input100 validate-input" data-validate = "Enter username">
-          <input class="input100" type="text" name="username" placeholder="Username">
-          <span class="focus-input100 far" data-placeholder="&#9786;"></span>
-        </div>
-
-        <div class="wrap-input100 validate-input" data-validate="Enter password">
-          <input class="input100" type="password" name="password" placeholder="Password">
-          <span class="focus-input100" data-placeholder="&#10037;"></span>
-        </div>
-
-        <div class="contact100-form-checkbox">
-          <input class="input-checkbox100" id="ckb1" type="checkbox" name="remember-me">
-          <label class="label-checkbox100" for="ckb1">
-            Remember me
-          </label>
-        </div>
-
-        <div class="container-login100-form-btn">
-          <button class="login100-form-btn" type="submit">
-            Login
-          </button>
-        </div>
-
-
-        <div class="text-center">
-          <a class="txt1" href="#">
-            Forgot Password?
-          </a>
-          <br>
-          <a class="txt1" href="#" onclick="createAccount()">
-            Don't have an account? Create one here
-          </a>
-        </div>
-      </form>
-    </div>
-  </div>
-
-
-  <div id="createBase">
-    <div id="createDesign" class="wrap-login100">
-      <span id="createClose">&times;</span>
-      <form id="createForm" action="/register" method="POST">
-        <span class="login100-form-title">
-          Create account
-        </span>
-  
-        <div class="wrap-input100 validate-input" data-validate = "Enter username">
-          <input class="input100" type="text" name="create_username" placeholder="Username">
-          <span class="focus-input100 far" data-placeholder="&#9786;"></span>
-        </div>
-  
-        <div class="wrap-input100 validate-input" data-validate="Enter password">
-          <input class="input100" type="password" name="create_password" placeholder="Password">
-          <span class="focus-input100" data-placeholder="&#10037;"></span>
-        </div>
-  
-        <div class="wrap-input100 validate-input" data-validate="Enter password">
-          <input class="input100" type="password" name="create_re-password" placeholder="Repeat Password">
-          <span class="focus-input100" data-placeholder="&#10037;"></span>
-        </div>
-  
-        <div class="wrap-input100 validate-input" data-validate="Enter email">
-          <input class="input100" type="email" name="email" placeholder="Email">
-          <span class="focus-input100" data-placeholder="&#9993;"></span>
-        </div>
-
-        <h1>{{ recaptcha }}</h1>
-
-        <button class="create-account" type="submit">
-          Create account
-        </button>
-        <div class="text-center">
-            <a class="txt1" href="#"onclick="login()">
-              Already have an account? Log in here
-            </a>
-          </div>
-      </form>
-    </div>
-  </div>
-
-<script>
-
-    var loginBase = document.getElementById('loginBase');
-    var createBase = document.getElementById('createBase');
-    var loginClose = document.getElementById('loginClose');
-    var createClose = document.getElementById('createClose');
-
-    loginClose.onclick = function() {
-      loginBase.style.display = "none";
-      createBase.style.display = "none";
-    }
-    createClose.onclick = function() {
-      createBase.style.display = "none";
-      loginBase.style.display = "none";
-    }
-
-    function login() {
-      loginBase.style.display = "block";
-      createBase.style.display = "none";
-    }
-
-    function createAccount(){
-      createBase.style.display = "block";
-      loginBase.style.display = "none";
-    }
-
-    window.onclick = function(event) {
-      if (event.target === loginBase || event.target === createBase) {
-        loginBase.style.display = "none";
-        createBase.style.display = "none";
-      }
-    }
-
-</script>
-
+    <form action="/" method="POST">
+        <label>Username</label>
+        <input placeholder="Username" id="username" name="username">
+        <br>
+        <label>Password</label>
+        <input placeholder="Password" type="password" id="password" name="password">
+        
+        <button type="submit">Login</button>
+        <br>
+        <br>
+        <label> Username </label>
+        <input placeholder="Username " id="skapaUsername" type="username">
+        <br>
+        <label> Lösenord </label>
+        <input placeholder="Password" type="password" id="skapaPassword" name="password">
+        <br>
+        <label> Konfirmera Lösenord </label>
+        <input placeholder="Repeater password" type="password" id="confirmPassword" name="password">
+        <br>
+        <input type="submit" value="Skapa konto">
+    </form>
 </body>
 </html>
