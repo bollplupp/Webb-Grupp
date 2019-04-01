@@ -37,14 +37,24 @@
 }
 
 /*---------------*/
-.annonse-box{
+.annonse-box-image{
   float: left;
   margin-left: 6.5%;
   margin-top: 3%;
-  width: 40%;
+  width: 20%;
   height: 22vh;
   background-color: #DCE4E8;
-  border: 1% solid red;
-  border-radius: 1vh;
+  border-top-left-radius: 1vh;
+  border-bottom-left-radius: 1vh;
+}
+
+.annonse-box-info{
+  float: left;
+  margin-top: 3%;
+  width: 20%;
+  height: 22vh;
+  background-color: #DCE4E8;
+  border-top-right-radius: 1vh;
+  border-bottom-right-radius: 1vh;
 }
 /*--------------*/
