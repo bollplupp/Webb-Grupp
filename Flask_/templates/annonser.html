@@ -5,17 +5,18 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<title>AdMap</title>
 	<meta name="viewport" content="width=device-width, initial-scale=1">
-	<link rel="stylesheet" type="text/css" media="screen" href="main.css">
-  <link rel="stylesheet" type="text/css" media="screen" href="annonser.css">
-	<script src="main.js"></script>
+	<link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='main.css') }}">
+  <link rel="stylesheet" type="text/css" media="screen" href="{{ url_for('static', filename='annonser.css') }}">
 </head>
 <body>
   <div class="mini-header">
-    <a class="mini-header-right" href="Mitt Konto.html">My account</a>
-    <h1 class="mini-header-left"> Help | Contact | Track Annonser </h1>
+    <a class="mini-header-right"> Email: example123@gmail.com | MY Account </a>
+    <a class="mini-header-left"> Help | Contact | Track Annonser </a>
   </div>
 <div class="header">
-  <h1 class="logo-text">AdMap</h1>
+  <div class="logo">
+    <a class="logo-text">AdMap</a>
+  </div>
   <div class="header-bar1"><a href="index.html">Home</a></div>
   <div class="header-bar"><a href="annonser.html">Annonser</a></div>
   <div class="header-bar"><a>Om</a></div>
@@ -23,7 +24,6 @@
   <div class="search">
  <div class="search-box">
  <input class="search-bar" type="text" placeholder="Search..." name="Search">
-
       <form>
         <select class="search-options">
         <option>Stockholm</option>
@@ -31,7 +31,7 @@
         <option>Hela Sverige</option>
         </select>
         <select class="search-options">
-        <option>Specifik kommun</option>
+        <option>Specifik Län</option>
         <option>Stockholm </option>
         <option>Huddinge</option>
 		<option> Haninge </option>
@@ -57,15 +57,6 @@
         </select>
       </form>
     </div>
-
-    <div class="annonse-box-image"></div>
-    <div class="annonse-box-info"></div>
-    <div class="annonse-box-image"></div>
-    <div class="annonse-box-info"></div>
-    <div class="annonse-box-image"></div>
-    <div class="annonse-box-info"></div>
-    <div class="annonse-box-image"></div>
-    <div class="annonse-box-info"></div>
   </div>
   </body>
 </html>
