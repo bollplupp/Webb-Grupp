@@ -23,6 +23,7 @@
 	font-family: vintage;
 }
 
+
 .header-bar, .header-bar1{
   margin-top: 3%;
   height: 4vh;
@@ -534,5 +535,5 @@ iframe {
 
 @font-face{
   font-family: vintage;
-  src: url(vintage.ttf);
+  src: url(../Webb-Grupp/Fonts/vintage.ttf);
 }
