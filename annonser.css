@@ -1,10 +1,9 @@
 .search{
-  width: 60%;
-  height: 100vh;
-  background-color: #44B2FF;
-  float: left;
-  margin-left: 20%;
-  margin-top: 1%;
+  width: 78%;
+	height: 77vh;
+	background-color: #43618F;
+	float: left;
+	margin-left: 11%;
 }
 
 .search-box{
@@ -36,3 +35,16 @@
   border-radius: 1vh;
   font-family: "Helvetica"
 }
+
+/*---------------*/
+.annonse-box{
+  float: left;
+  margin-left: 6.5%;
+  margin-top: 3%;
+  width: 40%;
+  height: 22vh;
+  background-color: #DCE4E8;
+  border: 1% solid red;
+  border-radius: 1vh;
+}
+/*--------------*/
