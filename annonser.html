@@ -31,29 +31,7 @@
         <option>Hela Sverige</option>
         </select>
         <select class="search-options">
-        <option>Specifik kommun</option>
-        <option>Stockholm </option>
-        <option>Huddinge</option>
-		<option> Haninge </option>
-		<option>Tyresö </option>
-		<option>Dalarna </option>
-		<option>norrtälje </option>
-		<option> Sollentuna </option>
-		<option>Upplands väsby </option>
-		<option>Märsta </option>
-		<option>Södertälje </option>
-		<option> Botkyrka </option>
-		<option> Lidingö </option>
-		<option> Nacka </option>
-		<option> Norrtälje </option>
-		<option> Nykvarn </option>
-		<option> Salem </option>
-		<option> Nynäshamn </option>
-		<option> Upplands-bro </option>
-		<option> Österåker </option>
-		<option> Vaxholm </option>
-		<option> Värmdö </option>
-		<option> solna </option>
+          <option>Specifik kommun</option>
         </select>
       </form>
     </div>
@@ -79,4 +57,18 @@
     </div>
   </div>
   </body>
+
+  <script>
+    var kommuner = ['Huddine', 'Haninge', 'Tyresö', 'Dalarna', 'Norrtälje', 'Sollentuna', 'Upplands Väsby', 'Märsta', 'Södertälje', 'Botkyrka', 'Lidingö', 'Nacka', 'Nykvarn', 'Salem', 'Nynäshamn', 'Upplands-bro', 'Österåker', 'Vaxholm', 'Värmdö', 'Solna'];
+    var option = document.createElement('option');
+
+
+    for (let i = 0; i < kommuner.length; i++) {
+
+      var option = document.createElement('option');
+      var kommun = document.createTextNode(kommuner[i]);        
+      option.appendChild(kommun);
+      document.getElementsByClassName('search-options')[1].appendChild(option);
+    }
+  </script>
 </html>
