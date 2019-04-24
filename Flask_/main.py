@@ -70,6 +70,7 @@ def create():
 
 @app.route("/login", methods=('GET', 'POST'))
 
+@app.route("/annonser", methods=('GET', 'POST'))
 
 @app.route("/logged")
 def logged():
