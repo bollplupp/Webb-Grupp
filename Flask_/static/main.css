@@ -4,6 +4,30 @@
   box-sizing: border-box;
 }
 
+@media (max-width: 1000px){
+  #createDesign, #loginDesign{
+    width: 50%;
+    height: 100%;
+  }
+  #loginClose, #createClose{
+    display: block;
+    float: right;
+    font-size: 200%;
+    color: white;
+  }
+  
+  #loginClose:hover, #createClose:hover{
+    cursor: pointer;
+    color: lightgray;
+  }
+}
+@media (max-width: 550px){
+  #createDesign, #loginDesign{
+    width: 100%;
+    height: 100%;
+  }
+}
+
 .header{
   height: 17vh;
   width: 100%;
@@ -55,7 +79,7 @@
 	height: 6vh;
 	background-color: #44B2FF;
 }
-.mini-header-right, #btnLogin{
+.mini-header-right{
   font-family: 'Helvetica';
 	margin-right: 4%;
 	margin-top: 1%;
@@ -64,8 +88,12 @@
   text-decoration: none;
 }
 
-#btnLogin:hover{
-	color: #43618F;
+
+#btnLogin, #btnCreate{
+  font-family: 'Helvetica';
+  margin: 1%;
+	color: white;
+  float: right;
   text-decoration: none;
 }
 
@@ -230,7 +258,19 @@ iframe {
 }
 
 /* ANVÄNDS */
-#loginBase{
+#loginClose, #createClose{
+  float: right;
+  font-size: 200%;
+  color: white;
+}
+
+#loginClose:hover, #createClose:hover{
+  cursor: pointer;
+  color: lightgray;
+}
+
+/* ANVÄNDS */
+#loginBase, #createBase{
   display: none; /* Hidden by default */
   position: fixed; /* Stay in place */
   z-index: 1; /* Sit on top */
@@ -241,6 +281,7 @@ iframe {
   overflow: hidden;
   background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
 }
+
 /* ANVÄNDS */
 .wrap-login100 {
   position: fixed !important;
@@ -267,10 +308,6 @@ iframe {
   to {right: 0; opacity: 1}
 }
 
-@keyframes fade-out {
-  from {right: 0; opacity: 1}
-  to {right: -300px; opacity: 0}
-}
 /*------------------------------------------------------------------
 [ Form ]*/
 /* ANVÄNDS */
@@ -314,7 +351,7 @@ iframe {
   padding: 0 5px 0 38px;
 }
 
-/*---------------------------------------------*/
+/*---------------------------------------------*/ 
 /* ANVÄNDS */
 .focus-input100 {
   position: absolute;
@@ -388,7 +425,6 @@ iframe {
   padding-left: 5px;
 }
 
-
 /*==================================================================
 [ Restyle Checkbox ]*/
 /* ANVÄNDS */
@@ -415,7 +451,6 @@ iframe {
 }
 /* ANVÄNDS */
 .label-checkbox100::before {
-  content: "\f26b";
   font-family: Material-Design-Iconic-Font;
   font-size: 13px;
   color: transparent;
@@ -525,17 +560,14 @@ iframe {
 /*------------------------------------------------------------------
 [ Responsive ]*/
 /* ANVÄNDS */
+.validate-input {
+  position: relative;
+}
 @media (max-width: 576px) {
   .wrap-login100 {
     padding: 55px 15px 37px 15px;
   }
 }
-/* ANVÄNDS */
-.validate-input {
-  position: relative;
-}
-
-
 @font-face{
   font-family: vintage;
   src: url(../Webb-Grupp/Fonts/vintage.ttf);
