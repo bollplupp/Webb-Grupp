@@ -52,7 +52,7 @@
 
 .mini-header{
 	width: 100%;
-	height: 6vh;
+	height: 5vh;
 	background-color: #44B2FF;
 }
 .mini-header-right, #btnLogin{
@@ -82,31 +82,22 @@
 
 #Container{
 	width: 78%;
-	height: 70vh;
+	height: 77vh;
 	background-color: #43618F;
 	float: left;
 	margin-left: 11%;
 }
 
-#sidbar-left-locations{
-  width: 23%;
-  height: 60vh;
-	background-color: #A4AAAD;
-  border: 2vh solid #CED5D9;
-  border-radius: 2%;
-  float: left;
+.locations{/*<-- change to this*/
   margin-left: 10%;
-  margin-top: 3%;
+  margin-top: 1%;
+  text-indent: 5%;
+  font-size: 90%;
 }
 
 #sidbar-right-karta{
-    width: 40%;
-    height: 60vh;
-    border: 2vh solid #CED5D9;
-		background-color: #A4AAAD;
-    border-radius: 2%;
-    float: left;
-    margin-left: 15%;
+    float: right;
+    margin-right: 13%;
     margin-top: 3%;
 }
 

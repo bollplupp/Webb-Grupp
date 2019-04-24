@@ -22,6 +22,7 @@
   border: none;
   font-size: 110%;
   margin-left: 1%;
+  color: black;
   font-family: "Helvetica";
   text-indent: 2%;
 }
@@ -33,7 +34,20 @@
   margin-top: 2.3%;
   margin-left: 4%;
   border-radius: 1vh;
-  font-family: "Helvetica"
+  font-family: "Helvetica";
+}
+.search-button {
+  float: left;
+  width: 16%;
+  height: 4vh;
+  margin-top: 2.3%;
+  margin-left: 4%;
+  border-radius: 1vh;
+  font-family: "Helvetica";
+  font-size: 110%;
+  font-style: bold;
+  background-color: #DCE4E8;
+  border-radius: 1vh;
 }
 
 /*---------------*/
@@ -59,11 +73,14 @@
 }
 
 .annonse-box-info h1{
-  margin-top: 1%;
-  font-size: 90%;
-  float: right;
-  margin-right: 1%;
+  margin-top: 2%;
+  font-size: 84%;
+  margin-left: 1%;
   font-family: "Helvetica";
   font-style: normal;
+}
+.annonse-box-info p{
+  margin-top: 2%;
+  margin-left: 1%;
 }
 /*--------------*/
